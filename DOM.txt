@@ -1,0 +1,5 @@
+                                DOM
+=> html ko js k andr access karny k tariqa ha.
+=> Tree like structure ha 
+=> jis ma  html k tags  and elements accessable hoty ha 
+=>

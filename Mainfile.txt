@@ -1,0 +1,45 @@
+import React from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import Self from './Header/Introduction';
+import Dog from './Header/Dog';
+
+const App = () => {
+  const [Hungry, Full] = useState("i am Hungry")
+  
+
+  function FULL()
+  {
+    Full("I am full");
+  }
+
+  
+  return (
+      <View style={styles.container}>
+      
+        <Self />
+      <Dog name="percy"></Dog>  
+      <Dog name="Tomy"></Dog>
+      <Text style={{ fontSize: 20, color: 'red' }}>{Hungry}</Text>
+      <Button title='PRESS' onPress={FULL} />
+        <StatusBar style="auto" />
+      </View>
+  );
+};
+
+
+
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    marginTop: 50,
+  },
+});
+
+export default App;

@@ -1,0 +1,14 @@
+import React from "react";                Intrdoduction.jsx
+import { View, Text } from 'react-native';
+
+const Self = () => {
+  let name = 'Ayesha';
+    return (
+        <View>
+            <Text style={{ fontSize: 15, color: 'purple' }}> My name is {name} </Text>
+            <Text style={{ fontSize: 15, color: 'blue' }} >I am doing BS SE </Text>
+        </View>
+
+    );
+};
+export default Self;

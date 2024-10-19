@@ -1,0 +1,11 @@
+import React from "react";
+import { Text, View } from "react-native";
+
+const Dog = (props) => {
+    return (
+        <View>
+            <Text style={{fontSize:18 , color:"red"}}>Hello! I am a dog . My name is {props.name}</Text>
+        </View>
+    );
+};
+export default Dog; 
